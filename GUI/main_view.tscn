@@ -16,3 +16,5 @@ __meta__ = {
 visible = false
 
 [node name="MainMenu" parent="." instance=ExtResource( 1 )]
+[connection signal="change_view" from="EditorMenu" to="." method="_on_child_change_view"]
+[connection signal="change_view" from="MainMenu" to="." method="_on_child_change_view"]

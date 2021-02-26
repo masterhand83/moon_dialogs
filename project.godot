@@ -8,9 +8,14 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Control",
+"class": "View",
+"language": "GDScript",
+"path": "res://GUI/view.gd"
+} ]
 _global_script_class_icons={
-
+"View": ""
 }
 
 [application]
