@@ -23,25 +23,31 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="VBoxContainer"]
-margin_top = 75.0
+margin_top = 60.0
 margin_right = 185.0
-margin_bottom = 95.0
+margin_bottom = 80.0
 text = "Add Dialog"
 
 [node name="Button2" type="Button" parent="VBoxContainer"]
-margin_top = 105.0
+margin_top = 90.0
 margin_right = 185.0
-margin_bottom = 125.0
+margin_bottom = 110.0
 text = "Add initial Dialog"
 
 [node name="Button3" type="Button" parent="VBoxContainer"]
-margin_top = 135.0
+margin_top = 120.0
 margin_right = 185.0
-margin_bottom = 155.0
+margin_bottom = 140.0
 text = "Add action"
 
 [node name="Button4" type="Button" parent="VBoxContainer"]
-margin_top = 165.0
+margin_top = 150.0
 margin_right = 185.0
-margin_bottom = 185.0
+margin_bottom = 170.0
 text = "add event"
+
+[node name="Button5" type="Button" parent="VBoxContainer"]
+margin_top = 180.0
+margin_right = 185.0
+margin_bottom = 200.0
+text = "return to menu"

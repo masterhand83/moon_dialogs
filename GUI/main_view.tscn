@@ -1,15 +1,18 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://main_menu/main_menu.tscn" type="PackedScene" id=1]
 [ext_resource path="res://editor_menu/editor_menu.tscn" type="PackedScene" id=2]
+[ext_resource path="res://GUI/main_view.gd" type="Script" id=3]
 
 [node name="MainView" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="EditorMenu" parent="." instance=ExtResource( 2 )]
+visible = false
 
 [node name="MainMenu" parent="." instance=ExtResource( 1 )]
