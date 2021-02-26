@@ -16,8 +16,15 @@ _global_script_class_icons={
 [application]
 
 config/name="Moon Dialog"
+run/main_scene="res://GUI/main_view.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1600
+window/size/height=900
 
 [rendering]
 
+quality/driver/driver_name="GLES2"
 environment/default_environment="res://default_env.tres"

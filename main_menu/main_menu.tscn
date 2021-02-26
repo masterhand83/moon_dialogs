@@ -1,0 +1,35 @@
+[gd_scene format=2]
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1.11768
+margin_right = -1.11768
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 754.0
+margin_top = 428.0
+margin_right = 845.0
+margin_bottom = 472.0
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_right = 91.0
+margin_bottom = 20.0
+text = "New Project"
+
+[node name="Button2" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_top = 24.0
+margin_right = 91.0
+margin_bottom = 44.0
+text = "Load Project"
