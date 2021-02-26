@@ -1,8 +1,11 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://main_menu/main_menu.gd" type="Script" id=1]
 
 [node name="MainMenu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -23,12 +26,12 @@ margin_top = 428.0
 margin_right = 845.0
 margin_bottom = 472.0
 
-[node name="Button" type="Button" parent="CenterContainer/VBoxContainer"]
+[node name="NewProjectButton" type="Button" parent="CenterContainer/VBoxContainer"]
 margin_right = 91.0
 margin_bottom = 20.0
 text = "New Project"
 
-[node name="Button2" type="Button" parent="CenterContainer/VBoxContainer"]
+[node name="LoadProjectButton" type="Button" parent="CenterContainer/VBoxContainer"]
 margin_top = 24.0
 margin_right = 91.0
 margin_bottom = 44.0
