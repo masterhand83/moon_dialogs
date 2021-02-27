@@ -3,4 +3,4 @@
 *.translation
 .mono/
 data_*/
-
+tests/
