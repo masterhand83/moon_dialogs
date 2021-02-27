@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://editor_menu/editor_buttons.gd" type="Script" id=1]
+
+[node name="EditorButtons" type="VBoxContainer"]
+margin_left = 51.0
+margin_top = 500.0
+margin_right = 236.0
+margin_bottom = 760.0
+custom_constants/separation = 10
+alignment = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AddDialogButton" type="Button" parent="."]
+margin_top = 45.0
+margin_right = 185.0
+margin_bottom = 65.0
+text = "Add Dialog"
+
+[node name="AddStartDialogButton" type="Button" parent="."]
+margin_top = 75.0
+margin_right = 185.0
+margin_bottom = 95.0
+text = "Add initial Dialog"
+
+[node name="AddActionButton" type="Button" parent="."]
+margin_top = 105.0
+margin_right = 185.0
+margin_bottom = 125.0
+text = "Add action"
+
+[node name="AddEventButton" type="Button" parent="."]
+margin_top = 135.0
+margin_right = 185.0
+margin_bottom = 155.0
+text = "add event"
+
+[node name="ExportToJSONButton" type="Button" parent="."]
+margin_top = 165.0
+margin_right = 185.0
+margin_bottom = 185.0
+text = "Export to JSON"
+
+[node name="ReturnEventButton" type="Button" parent="."]
+margin_top = 195.0
+margin_right = 185.0
+margin_bottom = 215.0
+text = "return to menu"
