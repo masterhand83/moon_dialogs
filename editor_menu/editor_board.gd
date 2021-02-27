@@ -1,5 +1,5 @@
 extends GraphEdit
-onready var DialogNodeResource= preload('res://dialog_node/dialog_node.tscn')
+onready var DialogNodeResource= preload('res://dialog_node/base_dialog_node.tscn')
 
 func add_dialog():
     var dialog_node = DialogNodeResource.instance()
