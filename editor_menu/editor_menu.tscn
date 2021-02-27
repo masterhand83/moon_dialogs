@@ -19,3 +19,4 @@ __meta__ = {
 }
 
 [node name="EditorButtons" parent="." instance=ExtResource( 2 )]
+[connection signal="return_to_menu" from="EditorButtons" to="." method="_on_EditorButtons_return_to_menu"]

@@ -49,3 +49,4 @@ margin_top = 195.0
 margin_right = 185.0
 margin_bottom = 215.0
 text = "return to menu"
+[connection signal="pressed" from="ReturnEventButton" to="." method="_on_ReturnEventButton_pressed"]

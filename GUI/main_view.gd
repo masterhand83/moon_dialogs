@@ -14,9 +14,5 @@ func change_view(view: String):
         $MainMenu.show()
 
 
-
-
-
-
 func _on_child_change_view(view) -> void:
     change_view(view)
