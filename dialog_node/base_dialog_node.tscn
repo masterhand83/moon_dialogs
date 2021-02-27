@@ -66,3 +66,4 @@ margin_top = 317.0
 margin_right = 247.0
 margin_bottom = 355.0
 [connection signal="close_request" from="." to="." method="_on_DialogNode_close_request"]
+[connection signal="add_choice" from="ChoiceMenu" to="." method="_on_ChoiceMenu_add_choice"]
