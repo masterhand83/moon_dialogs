@@ -36,34 +36,50 @@ slot/3/left_color = Color( 1, 1, 1, 1 )
 slot/3/right_enabled = false
 slot/3/right_type = 0
 slot/3/right_color = Color( 1, 1, 1, 1 )
+slot/4/left_enabled = false
+slot/4/left_type = 0
+slot/4/left_color = Color( 1, 1, 1, 1 )
+slot/4/right_enabled = false
+slot/4/right_type = 0
+slot/4/right_color = Color( 1, 1, 1, 1 )
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 24.0
+margin_right = 247.0
+margin_bottom = 38.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="CheckBox" type="CheckBox" parent="."]
 margin_left = 16.0
-margin_top = 24.0
+margin_top = 39.0
 margin_right = 247.0
-margin_bottom = 48.0
+margin_bottom = 63.0
 text = "multiple choice"
 
 [node name="DialogInputs" parent="." instance=ExtResource( 3 )]
-margin_top = 49.0
+margin_top = 64.0
 margin_right = 247.0
-margin_bottom = 301.0
+margin_bottom = 316.0
 
 [node name="Label" type="Label" parent="."]
 margin_left = 16.0
-margin_top = 302.0
+margin_top = 317.0
 margin_right = 247.0
-margin_bottom = 316.0
+margin_bottom = 331.0
 text = "Next"
 
 [node name="ChoiceMenu" parent="." instance=ExtResource( 1 )]
 margin_left = 16.0
-margin_top = 317.0
+margin_top = 332.0
 margin_right = 247.0
-margin_bottom = 355.0
+margin_bottom = 370.0
 [connection signal="close_request" from="." to="." method="_on_DialogNode_close_request"]
 [connection signal="add_choice" from="ChoiceMenu" to="." method="_on_ChoiceMenu_add_choice"]
+[connection signal="delete_choice" from="ChoiceMenu" to="." method="_on_ChoiceMenu_delete_choice"]
