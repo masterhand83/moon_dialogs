@@ -2,7 +2,7 @@
 
 [ext_resource path="res://editor_menu/editor_menu.gd" type="Script" id=1]
 [ext_resource path="res://editor_menu/editor_buttons.tscn" type="PackedScene" id=2]
-[ext_resource path="res://editor_menu/editor_board.gd" type="Script" id=3]
+[ext_resource path="res://editor_menu/editor_board.tscn" type="PackedScene" id=3]
 
 [node name="EditorMenu" type="Control"]
 anchor_right = 1.0
@@ -12,13 +12,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="EditorBoard" type="GraphEdit" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-script = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="EditorBoard" parent="." instance=ExtResource( 3 )]
 
 [node name="EditorButtons" parent="." instance=ExtResource( 2 )]
+[connection signal="add_dialog" from="EditorButtons" to="." method="_on_EditorButtons_add_dialog"]
 [connection signal="return_to_menu" from="EditorButtons" to="." method="_on_EditorButtons_return_to_menu"]
