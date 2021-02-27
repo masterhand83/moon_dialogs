@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://dialog_node/choice_menu.gd" type="Script" id=1]
+
+[node name="ChoiceMenu" type="VBoxContainer"]
+margin_right = 137.0
+margin_bottom = 85.0
+alignment = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_top = 23.0
+margin_right = 137.0
+margin_bottom = 37.0
+text = "choices"
+align = 1
+valign = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_top = 41.0
+margin_right = 137.0
+margin_bottom = 61.0
+alignment = 1
+
+[node name="AddChoiceButton" type="Button" parent="HBoxContainer"]
+margin_left = 48.0
+margin_right = 68.0
+margin_bottom = 20.0
+text = "+"
+
+[node name="DelChoiceButton" type="Button" parent="HBoxContainer"]
+margin_left = 72.0
+margin_right = 89.0
+margin_bottom = 20.0
+text = "-"
+[connection signal="pressed" from="HBoxContainer/AddChoiceButton" to="." method="_on_AddChoiceButton_pressed"]
+[connection signal="pressed" from="HBoxContainer/DelChoiceButton" to="." method="_on_DelChoiceButton_pressed"]

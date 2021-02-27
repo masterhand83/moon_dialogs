@@ -1,15 +1,18 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://dialog_node/dialog_inputs.tscn" type="PackedScene" id=1]
+[ext_resource path="res://dialog_node/dialog_node.gd" type="Script" id=2]
+[ext_resource path="res://dialog_node/choice_menu.tscn" type="PackedScene" id=3]
 
-[node name="DialogNode" type="GraphNode"]
+[node name="StartingDialogNode" type="GraphNode"]
 anchor_top = -0.000964491
 anchor_bottom = -0.000964491
-margin_top = -1.6247
+margin_top = -2.06109
 margin_right = 263.0
-margin_bottom = 310.375
+margin_bottom = 309.939
 title = "0"
-slot/0/left_enabled = true
+show_close = true
+slot/0/left_enabled = false
 slot/0/left_type = 0
 slot/0/left_color = Color( 1, 1, 1, 1 )
 slot/0/right_enabled = false
@@ -24,26 +27,42 @@ slot/1/right_color = Color( 1, 1, 1, 1 )
 slot/2/left_enabled = false
 slot/2/left_type = 0
 slot/2/left_color = Color( 1, 1, 1, 1 )
-slot/2/right_enabled = true
+slot/2/right_enabled = false
 slot/2/right_type = 0
 slot/2/right_color = Color( 1, 1, 1, 1 )
+slot/3/left_enabled = false
+slot/3/left_type = 0
+slot/3/left_color = Color( 1, 1, 1, 1 )
+slot/3/right_enabled = false
+slot/3/right_type = 0
+slot/3/right_color = Color( 1, 1, 1, 1 )
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="."]
+[node name="CheckBox" type="CheckBox" parent="."]
 margin_left = 16.0
 margin_top = 24.0
 margin_right = 247.0
-margin_bottom = 38.0
+margin_bottom = 48.0
+text = "multiple choice"
 
 [node name="DialogInputs" parent="." instance=ExtResource( 1 )]
+margin_top = 49.0
 margin_right = 247.0
-margin_bottom = 291.0
+margin_bottom = 301.0
 
-[node name="next" type="Label" parent="."]
+[node name="Label" type="Label" parent="."]
 margin_left = 16.0
-margin_top = 292.0
+margin_top = 302.0
 margin_right = 247.0
-margin_bottom = 306.0
-text = "next"
+margin_bottom = 316.0
+text = "Next"
+
+[node name="ChoiceMenu" parent="." instance=ExtResource( 3 )]
+margin_left = 16.0
+margin_top = 317.0
+margin_right = 247.0
+margin_bottom = 355.0
+[connection signal="close_request" from="." to="." method="_on_DialogNode_close_request"]
