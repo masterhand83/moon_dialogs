@@ -8,3 +8,7 @@ signal return_to_menu()
 
 func _on_ReturnEventButton_pressed() -> void:
     emit_signal('return_to_menu')
+
+
+func _on_AddDialogButton_pressed() -> void:
+    emit_signal('add_dialog')
