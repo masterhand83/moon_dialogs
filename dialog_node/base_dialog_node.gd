@@ -10,11 +10,13 @@ export(String, 'common', 'initial', 'final') var subtype = 'common'
 var choice_inputs = {}
 var choice_index = 5;
 
+
+
+
+
 func _on_DialogNode_close_request() -> void:
     self.clear_all_slots()
     self.queue_free()
-
-
 
 
 func _on_ChoiceMenu_add_choice() -> void:
