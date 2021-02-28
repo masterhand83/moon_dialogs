@@ -4,6 +4,9 @@ const DEFAULT_PORT = 0
 const NEXT_LABEL_INDEX = 3
 const CHOICE_MENU_INDEX = 4
 
+export var type = 'dialog'
+export(String, 'common', 'initial', 'final') var subtype = 'common'
+
 var choice_inputs = {}
 var choice_index = 5;
 
