@@ -13,6 +13,7 @@ __meta__ = {
 }
 
 [node name="EditorBoard" parent="." instance=ExtResource( 3 )]
+right_disconnects = true
 
 [node name="EditorButtons" parent="." instance=ExtResource( 2 )]
 [connection signal="add_dialog" from="EditorButtons" to="." method="_on_EditorButtons_add_dialog"]
