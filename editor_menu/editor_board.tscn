@@ -10,3 +10,4 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 [connection signal="connection_request" from="." to="." method="_on_EditorBoard_connection_request"]
+[connection signal="disconnection_request" from="." to="." method="_on_EditorBoard_disconnection_request"]
